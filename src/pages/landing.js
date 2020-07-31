@@ -25,7 +25,17 @@ export default function landing() {
           </video>
         </div>
       </div>
-      <h2 className={style.h2}>Guild History</h2>
+      <div className={style.article}>
+        <h2 data-aos="fade-left" className={style.h2}>
+          Guild Mission
+        </h2>
+        <p data-aos="fade-right" className={style.body_text}>
+          Welcome to the Apostles, Branded one... We are a dedicated community
+          with the goal of creating and maintaining an ecosystem of players
+          working to make our mark and synergize with each other for the good of
+          all
+        </p>
+      </div>
     </>
   );
 }
