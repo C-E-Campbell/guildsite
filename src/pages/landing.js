@@ -2,7 +2,7 @@ import React from 'react';
 import style from './landing.module.css';
 import video from '../assets/video/newLanding.mp4';
 import logo from '../assets/images/logo.png';
-import Auth from '../components/auth';
+
 export default function landing() {
   return (
     <div className={style.container}>
@@ -10,7 +10,6 @@ export default function landing() {
         <img data-aos="fade-in" alt="logo" className={style.logo} src={logo} />
         <h1 data-aos="fade-in">Apostles of the Abyss</h1>
       </div>
-
       <div className={style.overlay}></div>
       <div className={style.video_container}>
         <video className={style.video} autoPlay muted loop>
