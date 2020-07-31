@@ -9,11 +9,15 @@
 }
 
 .container {
-  height: 95vh;
+  height: 90vh;
   width: 100vw;
   background-size: cover;
   overflow: hidden;
   position: relative;
+}
+
+.headline {
+  font-size: 1.8rem;
 }
 
 .video_container {
@@ -40,7 +44,7 @@
 }
 
 .logo {
-  height: 10%;
+  height: 6rem;
   margin-top: 1rem;
 }
 

@@ -6,10 +6,7 @@
   align-items: center;
   justify-content: flex-end;
   overflow: hidden;
-}
-
-.selected {
-  color: red;
+  position: relative;
 }
 
 .navlink {
@@ -18,12 +15,22 @@
   text-decoration: none;
   text-shadow: none;
   color: #222;
-  letter-spacing: 0.2;
+  border-radius: 6px;
+  height: 100%;
+  text-align: right;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.navlink:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+  height: 100%;
 }
 
 .nav_container {
   max-width: 30%;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
