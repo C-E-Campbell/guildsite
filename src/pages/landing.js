@@ -17,6 +17,10 @@ export default function landing() {
           <h1 className={style.headline} data-aos="fade-in">
             Apostles of the Abyss
           </h1>
+          <p data-aos="fade-up" className={style.sub}>
+            Welcome to the Apostles, Branded one.
+          </p>
+          <button className={style.apply}>Join Us!</button>
         </div>
         <div className={style.overlay}></div>
         <div className={style.video_container}>
@@ -26,14 +30,14 @@ export default function landing() {
         </div>
       </div>
       <div className={style.article}>
-        <h2 data-aos="fade-left" className={style.h2}>
+        <h2 data-aos="fade" className={style.h2}>
           Guild Mission
         </h2>
-        <p data-aos="fade-right" className={style.body_text}>
-          Welcome to the Apostles, Branded one... We are a dedicated community
-          with the goal of creating and maintaining an ecosystem of players
-          working to make our mark and synergize with each other for the good of
-          all
+
+        <p data-aos="fade-up" className={style.body_text}>
+          We are a dedicated community with the goal of creating and maintaining
+          an ecosystem of players working to make our mark and synergize with
+          each other for the good of all
         </p>
       </div>
     </div>
