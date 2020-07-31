@@ -5,7 +5,6 @@
   letter-spacing: 10px;
   font-weight: 400;
   text-align: center;
-  text-shadow: 2px 2px #000;
 }
 
 .container {
@@ -53,4 +52,10 @@
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.h2 {
+  font-size: 1.2rem;
+  color: #222;
+  font-family: sans-serif;
 }

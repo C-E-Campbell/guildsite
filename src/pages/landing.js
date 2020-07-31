@@ -25,7 +25,7 @@ export default function landing() {
           </video>
         </div>
       </div>
-      <h2>Guild History</h2>
+      <h2 className={style.h2}>Guild History</h2>
     </>
   );
 }
