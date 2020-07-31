@@ -6,7 +6,9 @@
   font-weight: 400;
   text-align: center;
 }
-
+.main_container {
+  overflow-x: hidden;
+}
 .container {
   height: 90vh;
   width: 100vw;

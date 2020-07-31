@@ -5,7 +5,7 @@ import logo from '../assets/images/logo.png';
 
 export default function landing() {
   return (
-    <>
+    <div className={style.main_container}>
       <div className={style.container}>
         <div className={style.landing_container}>
           <img
@@ -36,6 +36,6 @@ export default function landing() {
           all
         </p>
       </div>
-    </>
+    </div>
   );
 }
