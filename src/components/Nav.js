@@ -29,6 +29,13 @@ export default function Nav() {
         >
           APPLY
         </NavLink>
+        <a
+          href="https://discord.com/channels/735220428397609023/735220428645204097"
+          target="_blank"
+          className={style.navlink}
+        >
+          CONTACT
+        </a>
       </div>
     </div>
   );
