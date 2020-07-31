@@ -33,6 +33,7 @@ export default function Nav() {
           href="https://discord.com/channels/735220428397609023/735220428645204097"
           target="_blank"
           className={style.navlink}
+          rel="noopener noreferrer"
         >
           CONTACT
         </a>
