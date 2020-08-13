@@ -12,10 +12,15 @@ function PreSiteVideo(props) {
     props.history.push('/main');
   };
 
+  const playAudio = () => {
+    const audioEl = document.getElementsByClassName('audio-element')[0];
+    audioEl.play();
+  };
+
   return (
     <div className={style.video_container}>
-      <audio>
-        <source src={audio} muted={sound} autoPlay loop />
+      <audio className="audio-element">
+        <source src={audio} loop />
       </audio>
 
       <img className={style.logo} src={Logo} alt="aota" />
@@ -29,7 +34,7 @@ function PreSiteVideo(props) {
       </button>
       <button
         onClick={() => {
-          SetSound(!sound);
+          playAudio();
         }}
         className={style.sound}
       >
