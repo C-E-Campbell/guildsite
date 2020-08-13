@@ -1,21 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { withRouter } from 'react-router-dom';
 import style from './PreSiteVideo.module.css';
 import video from '../assets/video/newLanding.mp4';
 import Logo from '../assets/images/logo.png';
 import audio from '../assets/music/HeroesOfOId-Mix1.mp3';
 function PreSiteVideo(props) {
-  const [sound, SetSound] = useState(false);
+  const [playing, setPlaying] = useState(false);
 
   const goToSite = () => {
-    SetSound(false);
+    toggle();
     props.history.push('/main');
   };
 
-  const playAudio = () => {
+  const toggle = () => setPlaying(!playing);
+  useEffect(() => {
     const audioEl = document.getElementsByClassName('audio-element')[0];
-    audioEl.play();
-  };
+    playing ? audioEl.play() : audioEl.pause();
+  }, [playing]);
 
   return (
     <div className={style.video_container}>
@@ -34,11 +35,11 @@ function PreSiteVideo(props) {
       </button>
       <button
         onClick={() => {
-          playAudio();
+          toggle();
         }}
         className={style.sound}
       >
-        {sound ? 'Sound' : 'Sound Muted'}
+        {playing ? 'Mute Sound' : 'UnMute Sound'}
       </button>
     </div>
   );
