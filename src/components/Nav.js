@@ -9,9 +9,25 @@ export default function Nav() {
           activeClassName={style.selected}
           className={style.navlink}
           exact
-          to="/"
+          to="/main"
         >
           HOME
+        </NavLink>
+        {/* <NavLink
+          className={style.navlink}
+          activeClassName={style.selected}
+          exact
+          to="/faq"
+        >
+          FAQ
+        </NavLink> */}
+        <NavLink
+          className={style.navlink}
+          activeClassName={style.selected}
+          exact
+          to="/apply"
+        >
+          APPLY
         </NavLink>
         <NavLink
           className={style.navlink}
@@ -21,22 +37,22 @@ export default function Nav() {
         >
           FAQ
         </NavLink>
-        <NavLink
-          className={style.navlink}
-          activeClassName={style.selected}
-          exact
-          to="/apply"
-        >
-          APPLY
-        </NavLink>
         <a
           href="https://discord.com/channels/735220428397609023/735220428645204097"
           target="_blank"
           className={style.navlink}
           rel="noopener noreferrer"
         >
-          CONTACT
+          DISCORD
         </a>
+        <NavLink
+          className={style.navlink}
+          activeClassName={style.selected}
+          exact
+          to="/login"
+        >
+          LOGIN/REGISTER
+        </NavLink>
       </div>
     </div>
   );

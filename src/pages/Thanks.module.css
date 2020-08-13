@@ -1,0 +1,26 @@
+* {
+  color: #fff;
+}
+
+.container {
+  background-color: #333;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.innerContainer {
+  max-width: 70%;
+  margin: 20vh auto;
+}
+
+.p {
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+}
+
+.a {
+  color: rgb(248, 190, 0);
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+}

@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: rgb(54, 54, 54);
+}
+
+.innerContainer {
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(46, 46, 46, 0.692);
+  padding: 10px 50px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.192);
+}
+
+.label {
+  font-size: 0.8rem;
+  color: rgb(247, 247, 247);
+  align-self: flex-start;
+}
+
+.input {
+  font-size: 0.6rem;
+  width: 700px;
+  margin: 0.5rem;
+  text-align: left;
+  border: none;
+  color: rgb(54, 54, 54);
+  border: 2px solid rgb(204, 155, 22);
+  border-radius: 2px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
+  padding: 10px;
+  text-align: left;
+  outline: none;
+}
+
+.button {
+  font-size: 0.7rem;
+  margin: 0.5rem 8px;
+  letter-spacing: 2px;
+  background-color: rgb(204, 155, 22);
+  color: rgb(34, 34, 34);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 2px;
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(248, 190, 0);
+}
+
+.formSwitch {
+  font-size: 0.4rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  letter-spacing: 1px;
+  color: rgb(247, 247, 247);
+  font-family: sans-serif;
+}
+
+.formSwitch:hover {
+  cursor: pointer;
+  color: rgb(248, 190, 0);
+}

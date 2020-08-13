@@ -1,45 +1,101 @@
 import React from 'react';
 import style from './landing.module.css';
-import video from '../assets/video/newLanding.mp4';
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/redLogo.png';
+import Nav from '../components/Nav';
+import Card from '../components/card';
+import Caravan from '../assets/images/Caravan 1.png';
+import Guild from '../assets/images/Leadership.png';
+import Raiding from '../assets/images/Raiding.png';
+import Council from '../assets/images/Councils.png';
+import Bounty from '../assets/images/Bounty Hunters.png';
+import Artisans from '../assets/images/Artisans.png';
+import Footer from '../components/Footer';
 
 export default function landing() {
   return (
-    <div className={style.main_container}>
-      <div className={style.container}>
-        <div className={style.landing_container}>
-          <img
-            data-aos="fade-in"
-            alt="logo"
-            className={style.logo}
-            src={logo}
-          />
-          <h1 className={style.headline} data-aos="fade-in">
-            Apostles of the Abyss
-          </h1>
-          <p data-aos="fade-up" className={style.sub}>
-            Welcome to the Apostles, Branded one.
-          </p>
-          <button className={style.apply}>Join Us!</button>
-        </div>
-        <div className={style.overlay}></div>
-        <div className={style.video_container}>
-          <video className={style.video} autoPlay muted loop>
-            <source src={video} type="video/mp4" />
-          </video>
-        </div>
-      </div>
-      <div className={style.article}>
-        <h2 data-aos="fade" className={style.h2}>
-          Guild Mission
-        </h2>
+    <>
+      <Nav />
+      <div data-aos="fade-in" className={style.main_container}>
+        <div className={style.container}>
+          <div className={style.landing_container}>
+            <img
+              data-aos="fade-in"
+              alt="logo"
+              className={style.logo}
+              src={logo}
+            />
+          </div>
+          <div className={style.textBox}>
+            <h1 className={style.logoP}>Apostles Of The Abyss</h1>
+          </div>
 
-        <p data-aos="fade-up" className={style.body_text}>
-          We are a dedicated community with the goal of creating and maintaining
-          an ecosystem of players working to make our mark and synergize with
-          each other for the good of all
-        </p>
+          <div className={style.overlay}></div>
+          <div className={style.video_container}></div>
+        </div>
+
+        <div className={style.article}>
+          <h4 className={style.h4}>We are the Apostles of the Abyss</h4>
+          <h2 data-aos="fade" className={style.h2}>
+            "Stacking the cobblestones to reach the castle in the sky"
+          </h2>
+          <p className={style.blurb}>
+            A dedicated PvX Ashes of Creation guild with the goal of creating &
+            maintaining an active and welcoming community in order to make our
+            mark within the game. We will rely on and work with each other to
+            prgress and succed in the most daunting of tasks. As a guild, we
+            will persistently strive to excel in all areas and aspects of the
+            game, welcoming anyone regardless of their style of play. We are
+            recruiting casual and hardcore: crafter, raider, dungeoneer, pvper
+            or anything between. If you are looking to form lasting
+            relationships that go beyond the boundaries of clocking in and
+            clocking out for raids, this might be the guild for you.
+          </p>
+          <hr className={style.hr}></hr>
+          <h3>Guild Features</h3>
+          <div className={style.cardContainer}>
+            <Card
+              img={Caravan}
+              title="Caravan Sevices"
+              description="Our Bounty Hunters Guild will offer protection services for your caravan & cargo. We will also form contracts with 
+            Allie & Vassal-Noes for both single-shipments and long term protection of a route."
+            />
+            <Card
+              img={Guild}
+              title="Guild Leadership"
+              description="Our leaders have been intricately involved in shaping & leading guilds to greatness since 2003. From FFXI, FFIV, Aion, Rift, GW2 & more. 
+            We strive to create a fun and welcoming place while also maintaining an orderly community that can achieve any level of content."
+            />
+            <Card
+              img={Raiding}
+              title="Raiding"
+              description="We will host two separate raiding groups, one will fouc on progression and forging ahead. The other raiding group will be more laid back & allow for more casual players to still experience the end game raiding content.
+            Each raiding group will have multiple leaders: the raid leader, dungeon masters & class leaders working together to ensure victory."
+            />
+          </div>
+          <div className={style.cardContainer}>
+            <Card
+              img={Council}
+              title="Guild Councils"
+              description="The guild will be run by several different councils, these groups of individuals will work in different parts of our guild ensuring eacha reais function smoothly. 
+            All areas will be covered from interpersonal needs, to guild artisans projects, siege attack and defense, raiding, PvP and freehold activites."
+            />
+            <Card
+              img={Bounty}
+              title="Guild Bounty Hunters"
+              description="Our aptly named 'Band of the Falcon', this is the mercenary wing of our guild. These individual hunters have a very particular set of skills; 
+            skills they have acquired over a very long career that will be integral to our success in the grander scale. They will be in charge of asset protection, anti-griefing, group disruption, siege strategies & more. 
+            These talented players will earn a cut from guild contracts."
+            />
+            <Card
+              img={Artisans}
+              title="Guild Artisans"
+              description="The guild will house a number of artisans and master artisans of all types, including
+            gathers, processors and crafters. The guild will supprt and nourish both established and aspiring crafters. We will rely on them to help grow our node, build our homes, and arm our forces."
+            />
+          </div>
+        </div>
+        <Footer />
       </div>
-    </div>
+    </>
   );
 }

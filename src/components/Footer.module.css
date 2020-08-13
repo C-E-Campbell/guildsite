@@ -1,0 +1,19 @@
+.footer {
+  color: #222;
+  background-color: rgb(204, 155, 22);
+  display: flex;
+  justify-content: center;
+}
+
+.innerContainer {
+  width: 70%;
+  height: 40vh;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+}
+
+.box {
+  background-color: green;
+  width: 45%;
+}

@@ -1,0 +1,109 @@
+.video_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.video {
+  width: 100vw;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  z-index: 1;
+  animation: fadeIn 1.6s ease-in forwards;
+}
+.button {
+  color: rgb(231, 233, 115);
+  z-index: 5;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  font-family: 'Cinzel', serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  border: 1px solid rgb(231, 233, 115);
+  border-radius: 3px;
+  outline: none;
+  animation: buttonSlideUpAndFade 1.6s ease-in both;
+}
+.button:hover {
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
+  border: 1px solid rgb(210, 212, 75);
+  color: rgb(210, 212, 75);
+  box-shadow: 1px 0px 8px 2px rgba(212, 124, 8, 0.144);
+  background-color: rgba(0, 0, 0, 0.199);
+  font-size: 1.32rem;
+}
+
+.logo {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 18rem;
+  z-index: 5;
+  animation: fadeInImg 1.6s ease-in forwards;
+}
+
+.sound {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  letter-spacing: 2px;
+  font-size: 0.4rem;
+  color: rgb(223, 223, 223);
+  background-color: transparent;
+  z-index: 5;
+  border: none;
+  outline: none;
+}
+
+.sound:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes fadeInImg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes buttonSlideUpAndFade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

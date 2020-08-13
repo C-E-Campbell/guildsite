@@ -1,0 +1,43 @@
+.card {
+  max-height: 700px;
+  height: 600px;
+  max-width: 350px;
+  margin: 0.5rem 0;
+  padding: 10px;
+  border-radius: 6px;
+  transition: all 0.2s ease-out;
+}
+
+.card:hover {
+  background-color: rgb(65, 34, 34);
+  z-index: 12000;
+  transform: scale(1.12);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.24);
+}
+
+.img {
+  height: 120px;
+}
+
+.title {
+  font-size: 0.7rem;
+  margin: 0.3rem;
+  letter-spacing: 2px;
+  color: rgb(204, 155, 22);
+}
+.paragraph {
+  font-size: 0.4rem;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  text-align: LEFT;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.hr {
+  background-color: rgb(204, 155, 22);
+  width: 20%;
+  border: 1px solid rgb(204, 155, 22);
+  border-radius: 5px;
+  margin: 0.5rem auto;
+}

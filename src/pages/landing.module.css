@@ -1,6 +1,6 @@
 * {
   font-family: 'Cinzel', serif;
-  color: #fff;
+  color: #222;
   font-size: 1.9rem;
   letter-spacing: 10px;
   font-weight: 400;
@@ -15,10 +15,47 @@
   background-size: cover;
   overflow: hidden;
   position: relative;
+  background-image: url('../assets//images/background.jpg');
+  z-index: -1;
+  background-color: rgb(34, 34, 34);
+}
+
+.logoH1 {
+  color: rgb(204, 155, 22);
+  font-size: 1.6rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.404);
+}
+
+.logoImg {
+  display: inline;
+}
+
+.blurb {
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+  color: rgb(204, 155, 22);
+  font-family: 'Cinzel', serif;
+  letter-spacing: 2px;
+  width: 60%;
+  margin: 0 auto 4rem;
+}
+
+.textBox {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logoP {
+  font-size: 2rem;
+  color: rgb(204, 155, 22);
+  animation: fadeH1 2.5s ease-in-out forwards;
 }
 
 .headline {
   font-size: 1.5rem;
+  color: rgb(204, 155, 22);
 }
 
 .video_container {
@@ -40,13 +77,24 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.473));
-  z-index: -1;
+  background-color: #000;
+  z-index: -77;
+  animation: fadeOut 1.5s ease-out forwards;
 }
 
 .logo {
-  height: 6rem;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 20rem;
   margin-top: 0.2rem;
+  z-index: -79;
+  animation: fadeLogo 1.5s ease-in forwards;
+}
+
+.h4 {
+  margin-bottom: 1rem;
 }
 
 .landing_container {
@@ -54,21 +102,30 @@
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
+  z-index: -76;
+  width: 1900px;
 }
 
 .h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  color: #222;
+  font-size: 0.9rem;
+  margin-bottom: 3rem;
+  color: rgb(233, 233, 233);
   font-family: 'Cinzel', serif;
+  letter-spacing: 2px;
 }
 
 .sub {
   font-size: 0.6rem;
   margin-bottom: 0.5rem;
-  color: #fff;
+  color: rgb(233, 233, 233);
   font-family: 'Montserrat', sans-serif;
   width: 80%;
+  margin: 0 auto;
+  color: rgb(204, 155, 22);
+}
+
+.hud {
+  width: 200px;
   margin: 0 auto;
 }
 
@@ -83,10 +140,12 @@
 }
 
 .article {
-  margin: 100px 0;
+  padding: 100px 0 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: rgb(17, 17, 17);
+  border-top: 2px solid rgba(204, 155, 22, 0.788);
 }
 
 .apply {
@@ -100,8 +159,55 @@
   cursor: pointer;
   outline: none;
   margin-top: 2rem;
+  z-index: 10;
 }
 
 .apply:hover {
   background-color: rgb(25, 189, 218);
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hr {
+  margin-bottom: 4rem;
+  width: 30%;
+  border: 1px solid rgba(204, 155, 22, 0.788);
+}
+
+@keyframes fadeLogo {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes fadeH1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.9;
+  }
 }
