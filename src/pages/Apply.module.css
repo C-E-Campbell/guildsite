@@ -13,7 +13,7 @@
     ),
     url('../assets/images/war.jpg');
   overflow-x: hidden;
-  height: 100vh;
+  min-height: 100vh;
   color: rgb(247, 247, 247);
   background-size: cover;
 }
@@ -23,8 +23,7 @@
   padding: 1rem;
   margin-top: 2rem;
   border-radius: 5px;
-  min-width: 60%;
-  min-height: 40vh;
+  min-width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,7 +90,7 @@
 }
 
 .h2 {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: rgb(247, 247, 247);
 }
 
