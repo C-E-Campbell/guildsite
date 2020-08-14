@@ -10,7 +10,6 @@ import Council from '../assets/images/Councils.png';
 import Bounty from '../assets/images/Bounty Hunters.png';
 import Artisans from '../assets/images/Artisans.png';
 import Footer from '../components/Footer';
-import smokeVideo from '../assets/video/smoke.mp4';
 
 export default function landing() {
   return (
