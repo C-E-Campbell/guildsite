@@ -18,7 +18,7 @@
       180deg,
       rgb(0, 0, 0) 5%,
       rgba(27, 27, 34, 0.445) 66%,
-      rgb(0, 0, 0) 94%
+      rgba(0, 0, 0, 0.336) 100%
     ),
     url('../assets/images/berserk.jpg');
   background-size: cover;
