@@ -7,9 +7,10 @@
   flex-direction: column;
   align-items: center;
   background-image: linear-gradient(
-      45deg,
-      rgba(17, 17, 17, 0.863),
-      rgba(17, 17, 17, 0.767)
+      180deg,
+      rgb(0, 0, 0) 5%,
+      rgba(27, 27, 34, 0.863) 66%,
+      rgba(0, 0, 0, 0.596) 100%
     ),
     url('../assets/images/war.jpg');
   overflow-x: hidden;
@@ -20,7 +21,7 @@
 
 .formBox {
   background-color: rgba(10, 10, 10, 0.568);
-  padding: 1rem;
+  padding: 2rem;
   margin-top: 2rem;
   border-radius: 5px;
   min-width: 70%;
@@ -54,7 +55,7 @@
   display: flex;
 }
 .button {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin: 0.5rem 8px;
   letter-spacing: 2px;
   background-color: rgb(204, 155, 22);
@@ -73,12 +74,13 @@
 }
 
 .p {
-  font-size: 0.6rem;
+  font-size: 1rem;
   letter-spacing: 2px;
   line-height: 1.7;
   max-width: 800px;
   color: rgb(247, 247, 247);
   text-align: justify;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .p2 {
@@ -90,14 +92,15 @@
 }
 
 .h2 {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: rgb(247, 247, 247);
+  font-family: 'Cinzel Decorative', cursive;
 }
 
 .a {
   color: rgb(248, 190, 0);
-
-  font-size: 0.5rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
   letter-spacing: 2px;
 }
 

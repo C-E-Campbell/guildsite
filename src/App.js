@@ -7,6 +7,7 @@ import FAQ from './pages/FAQ';
 import PreSite from './pages/PreSiteVideo';
 import Thanks from './pages/Thanks';
 import Login from './pages/Login';
+import FaqMain from './pages/FaqMain';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
         </Route>
         <Route exact path="/faq">
           <Nav />
-          <FAQ />
+          <FaqMain />
         </Route>
         <Route exact path="/thanks">
           <Nav />
