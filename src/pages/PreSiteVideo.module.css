@@ -24,7 +24,7 @@
   animation: fadeIn 1.6s ease-in forwards;
 }
 .button {
-  color: rgb(231, 233, 115);
+  color: rgb(219, 84, 31);
   z-index: 5;
   position: absolute;
   top: 85%;
@@ -32,9 +32,9 @@
   transform: translateX(-50%);
   background-color: transparent;
   font-family: 'Cinzel', serif;
-  font-size: 1.3rem;
+  font-size: 2rem;
   letter-spacing: 0.2rem;
-  border: 1px solid rgb(231, 233, 115);
+  border: 1px solid rgb(219, 84, 31);
   border-radius: 3px;
   outline: none;
   animation: buttonSlideUpAndFade 1.6s ease-in both;
@@ -43,11 +43,11 @@
   transition: all 0.1s ease-in-out;
   cursor: pointer;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
-  border: 1px solid rgb(210, 212, 75);
-  color: rgb(210, 212, 75);
+  border: 1px solid rgb(223, 103, 55);
+  color: rgb(233, 100, 48);
   box-shadow: 1px 0px 8px 2px rgba(212, 124, 8, 0.144);
-  background-color: rgba(0, 0, 0, 0.199);
-  font-size: 1.32rem;
+  background-color: rgba(0, 0, 0, 0.418);
+  font-size: 2.2rem;
 }
 
 .logo {
@@ -55,18 +55,18 @@
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
-  height: 18rem;
+  height: 70%;
   z-index: 5;
   animation: fadeInImg 1.6s ease-in forwards;
 }
 
 .sound {
   position: absolute;
-  top: 90%;
-  left: 90%;
+  top: 95%;
+  left: 95%;
   letter-spacing: 2px;
-  font-size: 0.4rem;
-  color: rgb(223, 223, 223);
+  font-size: 0.7rem;
+  color: red;
   background-color: transparent;
   z-index: 5;
   border: none;

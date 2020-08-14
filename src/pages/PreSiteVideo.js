@@ -39,7 +39,11 @@ function PreSiteVideo(props) {
         }}
         className={style.sound}
       >
-        {playing ? 'Mute Sound' : 'UnMute Sound'}
+        {playing ? (
+          <i className="fa fa-volume-off fa-2x sound" aria-hidden="true"></i>
+        ) : (
+          <i className="fa fa-volume-up fa-2x sound" aria-hidden="true"></i>
+        )}
       </button>
     </div>
   );
