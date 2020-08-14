@@ -6,18 +6,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(54, 54, 54);
+  background-image: linear-gradient(
+      45deg,
+      rgba(17, 17, 17, 0.863),
+      rgba(17, 17, 17, 0.767)
+    ),
+    url('../assets/images/war.jpg');
   overflow-x: hidden;
   height: 100vh;
   color: rgb(247, 247, 247);
+  background-size: cover;
 }
 
 .formBox {
-  background-color: rgba(36, 36, 36, 0.39);
+  background-color: rgba(10, 10, 10, 0.568);
   padding: 1rem;
   margin-top: 2rem;
   border-radius: 5px;
   min-width: 60%;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
