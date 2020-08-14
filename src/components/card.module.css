@@ -1,37 +1,34 @@
 .card {
-  max-height: 700px;
-  height: 500px;
   max-width: 350px;
-  margin: 0.5rem 0;
+  height: 500px;
+  margin: 3rem 0;
   padding: 10px;
   border-radius: 6px;
-  transition: all 0.2s ease-out;
-}
-
-.card:hover {
-  background-color: rgb(65, 34, 34);
-  z-index: 12000;
-  transform: scale(1.12);
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.24);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .img {
   height: 120px;
+  margin: 0 auto;
 }
 
 .title {
-  font-size: 0.7rem;
-  margin: 0.3rem;
+  font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 0.7rem;
   letter-spacing: 2px;
   color: rgb(204, 155, 22);
 }
 .paragraph {
-  font-size: 0.4rem;
+  font-size: 0.9rem;
   letter-spacing: 2px;
-  font-family: sans-serif;
   text-align: LEFT;
   line-height: 1.5;
   color: #ccc;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .hr {

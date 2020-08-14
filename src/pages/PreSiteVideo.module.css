@@ -31,7 +31,7 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: transparent;
-  font-family: 'Cinzel', serif;
+  font-family: 'Cinzel Decorative', cursive;
   font-size: 2rem;
   letter-spacing: 0.2rem;
   border: 1px solid rgb(219, 84, 31);
@@ -76,6 +76,10 @@
 .sound:hover {
   cursor: pointer;
   color: #fff;
+}
+
+.iconColor {
+  color: red;
 }
 
 @keyframes fadeIn {

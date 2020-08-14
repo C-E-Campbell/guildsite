@@ -1,6 +1,7 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import style from './navigation.module.css';
+import logo from '../assets/images/redLogo.png';
 export default function Nav() {
   return (
     <div className={style.container}>
@@ -36,6 +37,14 @@ export default function Nav() {
           to="/faq"
         >
           FAQ
+        </NavLink>
+        <NavLink
+          className={style.navlink}
+          activeClassName={style.selected}
+          exact
+          to="/Streams"
+        >
+          STREAM
         </NavLink>
         <a
           href="https://discord.com/channels/735220428397609023/735220428645204097"

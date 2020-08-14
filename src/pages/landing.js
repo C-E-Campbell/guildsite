@@ -13,18 +13,11 @@ import Footer from '../components/Footer';
 
 export default function landing() {
   return (
-    <>
+    <div className={style.pageContainer}>
       <Nav />
-      <div data-aos="fade-in" className={style.main_container}>
+      <div className={style.main_container}>
         <div className={style.container}>
-          <div className={style.landing_container}>
-            <img
-              data-aos="fade-in"
-              alt="logo"
-              className={style.logo}
-              src={logo}
-            />
-          </div>
+          <div className={style.landing_container}></div>
           <div className={style.textBox}>
             <h1 className={style.logoP}>Apostles Of The Abyss</h1>
           </div>
@@ -33,16 +26,33 @@ export default function landing() {
           <div className={style.video_container}></div>
         </div>
 
-        <div className={style.article}>
-          <h4 className={style.h4}>We are the Apostles of the Abyss</h4>
-          <h2 data-aos="fade" className={style.h2}>
+        <div className={style.article1}>
+          <h4
+            data-aos-once="true"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            className={style.h4}
+          >
+            We are the Apostles of the Abyss
+          </h4>
+          <h2
+            data-aos-once="true"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            className={style.h2}
+          >
             "Stacking the cobblestones to reach the castle in the sky"
           </h2>
-          <p className={style.blurb}>
+          <p
+            data-aos-once="true"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            className={style.blurb}
+          >
             A dedicated PvX Ashes of Creation guild with the goal of creating &
             maintaining an active and welcoming community in order to make our
             mark within the game. We will rely on and work with each other to
-            prgress and succed in the most daunting of tasks. As a guild, we
+            progress and succeed in the most daunting of tasks. As a guild, we
             will persistently strive to excel in all areas and aspects of the
             game, welcoming anyone regardless of their style of play. We are
             recruiting casual and hardcore: crafter, raider, dungeoneer, pvper
@@ -50,8 +60,17 @@ export default function landing() {
             relationships that go beyond the boundaries of clocking in and
             clocking out for raids, this might be the guild for you.
           </p>
-          <hr className={style.hr}></hr>
-          <h3>Guild Features</h3>
+          <img src={logo} className={style.redLogo} />
+        </div>
+        <div className={style.article}>
+          <h3
+            data-aos-once="true"
+            data-aos="fade"
+            data-aos-delay="50"
+            className={style.h4}
+          >
+            Guild Features
+          </h3>
           <div className={style.cardContainer}>
             <Card
               img={Caravan}
@@ -94,8 +113,8 @@ export default function landing() {
             />
           </div>
         </div>
-        <Footer />
       </div>
-    </>
+      <Footer />
+    </div>
   );
 }
