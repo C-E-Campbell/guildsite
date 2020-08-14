@@ -19,7 +19,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.63);
+  background-color: rgba(0, 0, 0, 0.74);
   z-index: 1;
   animation: fadeIn 1.6s ease-in forwards;
 }
