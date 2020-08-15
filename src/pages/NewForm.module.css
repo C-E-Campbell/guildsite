@@ -30,13 +30,13 @@
 
 .label {
   color: rgb(236, 236, 236);
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .input {
   color: #333;
   padding: 5px 10px;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   margin: 20px 0;
   background-color: #ccc;
 }
@@ -52,8 +52,9 @@
 }
 
 .input2 {
+  width: 100%;
   height: 300px;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   color: #333;
   padding: 0.5rem;
   background-color: #ccc;
