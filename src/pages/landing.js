@@ -77,7 +77,7 @@ export default function landing() {
               img={Caravan}
               title="Caravan Sevices"
               description="Our Bounty Hunters Guild will offer protection services for your caravan & cargo. We will also form contracts with 
-            Allie & Vassal-Noes for both single-shipments and long term protection of a route."
+            Ally & Vassal-Nodes for both single-shipments and long term protection of a route."
             />
             <Card
               img={Guild}
@@ -88,7 +88,7 @@ export default function landing() {
             <Card
               img={Raiding}
               title="Raiding"
-              description="We will host two separate raiding groups, one will fouc on progression and forging ahead. The other raiding group will be more laid back & allow for more casual players to still experience the end game raiding content.
+              description="We will host two separate raiding groups, one will focus on progression and forging ahead. The other raiding group will be more laid back & allow for more casual players to still experience the end game raiding content.
             Each raiding group will have multiple leaders: the raid leader, dungeon masters & class leaders working together to ensure victory."
             />
           </div>
@@ -96,7 +96,7 @@ export default function landing() {
             <Card
               img={Council}
               title="Guild Councils"
-              description="The guild will be run by several different councils, these groups of individuals will work in different parts of our guild ensuring eacha reais function smoothly. 
+              description="The guild will be run by several different councils, these groups of individuals will work in different parts of our guild ensuring each area is functioning smoothly. 
             All areas will be covered from interpersonal needs, to guild artisans projects, siege attack and defense, raiding, PvP and freehold activites."
             />
             <Card
