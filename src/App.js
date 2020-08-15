@@ -2,7 +2,7 @@ import React from 'react';
 import Landing from './pages/landing';
 import { Switch, Route } from 'react-router-dom';
 import Nav from './components/Nav';
-import Apply from './pages/Apply';
+import Apply from './pages/newForm';
 import FAQ from './pages/FAQ';
 import PreSite from './pages/PreSiteVideo';
 import Thanks from './pages/Thanks';

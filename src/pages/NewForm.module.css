@@ -1,0 +1,59 @@
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  background-color: red;
+  padding: 5vh 0;
+  background-image: linear-gradient(rgb(0, 0, 0) 2%, rgba(0, 0, 0, 0.603) 100%),
+    url('../assets/images/apply.jpg');
+  background-size: cover;
+}
+
+.h2 {
+  font-size: 2rem;
+  color: rgb(236, 236, 236);
+  margin: 0 0 5vh;
+  text-align: center;
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+.form {
+  background-color: rgba(12, 12, 12, 0.692);
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.label {
+  color: rgb(236, 236, 236);
+  font-size: 1.5rem;
+}
+
+.input {
+  color: #333;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  margin: 20px 0;
+  background-color: #ccc;
+}
+
+.option {
+  color: #333;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+}
+
+.checkboxContainer {
+  display: flex;
+}
+
+.input2 {
+  height: 300px;
+  font-size: 1.5rem;
+  color: #333;
+  padding: 0.5rem;
+  background-color: #ccc;
+}

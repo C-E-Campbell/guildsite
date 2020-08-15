@@ -1,11 +1,13 @@
 .container {
   overflow-x: hidden;
+  background-color: tomato;
 }
 
 .formContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-image: linear-gradient(
       180deg,
       rgb(0, 0, 0) 5%,
@@ -15,12 +17,10 @@
     url('../assets/images/war.jpg');
   overflow-x: hidden;
   min-height: 100vh;
-  color: rgb(247, 247, 247);
   background-size: cover;
 }
 
 .formBox {
-  background-color: rgba(10, 10, 10, 0.568);
   padding: 2rem;
   margin-top: 2rem;
   border-radius: 5px;
@@ -31,12 +31,13 @@
 }
 
 .label {
+  text-align: center;
   font-size: 0.9rem;
   display: block;
-  margin: 1rem 0;
+  margin: 1rem auto;
   max-width: 1000px;
   letter-spacing: 2px;
-  color: rgb(247, 247, 247);
+  color: rgb(22, 22, 22);
 }
 .input {
   display: block;
@@ -78,7 +79,7 @@
   letter-spacing: 2px;
   line-height: 1.7;
   max-width: 800px;
-  color: rgb(247, 247, 247);
+  color: rgb(12, 12, 12);
   text-align: justify;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -88,12 +89,12 @@
   letter-spacing: 2px;
   margin: 10px 0px;
   max-width: 800px;
-  color: rgb(247, 247, 247);
+  color: rgb(8, 8, 8);
 }
 
 .h2 {
   font-size: 2rem;
-  color: rgb(247, 247, 247);
+  color: rgb(12, 11, 11);
   font-family: 'Cinzel Decorative', cursive;
 }
 

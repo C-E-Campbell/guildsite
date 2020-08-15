@@ -38,14 +38,14 @@ export default function Nav() {
         >
           FAQ
         </NavLink>
-        <NavLink
+        {/* <NavLink
           className={style.navlink}
           activeClassName={style.selected}
           exact
           to="/Streams"
         >
           STREAM
-        </NavLink>
+        </NavLink> */}
         <a
           href="https://discord.com/channels/735220428397609023/735220428645204097"
           target="_blank"
@@ -54,14 +54,14 @@ export default function Nav() {
         >
           DISCORD
         </a>
-        <NavLink
+        {/* <NavLink
           className={style.navlink}
           activeClassName={style.selected}
           exact
           to="/login"
         >
           LOGIN/REGISTER
-        </NavLink>
+        </NavLink> */}
       </div>
     </div>
   );
