@@ -11,20 +11,27 @@
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.452);
 }
 
+.questionContainer {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  background-color: rgb(43, 30, 37);
+  margin: 0.1rem 0;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  width: 100%;
+}
+
 .title {
   color: #ccc;
   font-size: 1rem;
-  padding: 0.5rem 0;
   width: 100%;
   text-align: left;
-  background-color: rgb(75, 30, 27);
-  margin: 0.1rem 0;
-  padding: 0.5rem;
-  border-radius: 5px;
+  margin-left: 0.5rem;
 }
 
-.title:hover {
-  background-color: rgb(114, 44, 39);
+.questionContainer:hover {
+  background-color: rgb(51, 35, 43);
   cursor: pointer;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.651);
   color: #fff;
@@ -37,7 +44,7 @@
   padding: 0.5rem 0;
   width: 100%;
   text-align: left;
-  background-color: rgb(161, 123, 18);
+  background-color: rgb(192, 149, 32);
   padding: 0.5rem;
   border-radius: 5px;
   margin: 0.1rem 0;

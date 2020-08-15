@@ -1,5 +1,17 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import styles from '../components/FaqSquare.module.css';
-export default function FaqSquare(props) {
-  return <div className={styles.box}>{props.title}</div>;
+function FaqSquare(props) {
+  return (
+    <div
+      onClick={() => {
+        props.history.push(`/${props.url}`);
+      }}
+      className={styles.box}
+    >
+      {props.title}
+    </div>
+  );
 }
+
+export default withRouter(FaqSquare);
