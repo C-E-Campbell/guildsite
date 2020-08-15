@@ -10,5 +10,26 @@
   max-width: 70%;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-self: center;
+  margin: 0 auto;
+  padding: 4rem 0 1rem;
+  background-color: transparent;
+}
+
+.subjectContainer {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent;
+}
+
+.h2 {
+  margin: 0 auto 100px;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  line-height: 1.7;
+  color: rgb(226, 225, 225);
+  text-shadow: 2px 2px #000;
 }
