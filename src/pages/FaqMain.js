@@ -10,14 +10,14 @@ export default function FaqMain() {
         <div className={styles.innerContainer}>
           <h2 className={styles.h2}>FAQ</h2>
           <div className={styles.subjectContainer}>
-            <FaqSquares title="Node Ambition" />
-            <FaqSquares title="Guild Size" />
-            <FaqSquares title="Guild Size" />
+            <FaqSquares title="101 & Requirements" />
+            <FaqSquares title="Guild Ambition" />
+            <FaqSquares title="Interior Factions" />
           </div>
           <div className={styles.subjectContainer}>
-            <FaqSquares title="Guild Size" />
-            <FaqSquares title="Guild Size" />
-            <FaqSquares title="Guild Size" />
+            <FaqSquares title="Raiding" />
+            <FaqSquares title="Node Ambition" />
+            <FaqSquares title="Launch Plans" />
           </div>
         </div>
       </div>
