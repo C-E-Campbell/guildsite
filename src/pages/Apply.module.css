@@ -1,6 +1,5 @@
 .container {
   overflow-x: hidden;
-  background-color: tomato;
 }
 
 .formContainer {
@@ -14,7 +13,7 @@
       rgba(27, 27, 34, 0.863) 66%,
       rgba(0, 0, 0, 0.596) 100%
     ),
-    url('../assets/images/war.jpg');
+    url('../assets/images/applybg.jpg');
   overflow-x: hidden;
   min-height: 100vh;
   background-size: cover;

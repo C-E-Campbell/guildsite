@@ -1,7 +1,7 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import style from './navigation.module.css';
-import logo from '../assets/images/redLogo.png';
+
 export default function Nav() {
   return (
     <div className={style.container}>
