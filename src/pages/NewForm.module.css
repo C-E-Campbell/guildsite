@@ -37,14 +37,15 @@
   margin: 1.5rem auto;
   padding: 8px 16px;
   font-size: 2rem;
-  background-color: rgb(104, 103, 43);
+  background-color: rgb(204, 155, 22);
   border: none;
   border-radius: 4px;
 }
 
 .formBtn:hover {
   cursor: pointer;
-  background-color: rgb(122, 121, 49);
+  background-color: rgb(223, 171, 29);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.658);
 }
 
 .label {
