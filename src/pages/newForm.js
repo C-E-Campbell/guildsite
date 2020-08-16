@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import styles from './NewForm.module.css';
 function NewForm(props) {
-  const [formNum, SetFormNum] = useState(0);
   const [discordID, SetDiscordID] = useState('');
   const [access, SetAccess] = useState('');
   const [mic, SetMic] = useState('');
   const [interests, SetInterests] = useState([]);
   const [crafting, SetCrafting] = useState('');
   const [membership, SetMembership] = useState('');
+  const [role, SetRole] = useState('');
   const [personality, SetPersonality] = useState('');
   const [exp, SetExp] = useState('');
   const [questions, SetQuestions] = useState('');
@@ -16,6 +17,22 @@ function NewForm(props) {
     const values = interests.slice();
     values.push(value);
     SetInterests(values);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios.post('/api/v1/guildapp', {
+      discordID,
+      access,
+      mic,
+      interests,
+      crafting,
+      membership,
+      personality,
+      role,
+      exp,
+      questions,
+    });
   };
 
   return (
@@ -36,7 +53,6 @@ function NewForm(props) {
           Beta access or Streaming when the NDA is lifted for Guild-Mates to
           learn with you?
         </label>
-
         <select
           onChange={(e) => {
             SetAccess(e.target.value);
@@ -247,7 +263,7 @@ function NewForm(props) {
             onChange={(e) => {
               handleInterests('Build & Class research and testing');
             }}
-            ame={styles.checkbox}
+            className={styles.checkbox}
             type="checkbox"
             id="research"
             name="interests"
@@ -256,12 +272,101 @@ function NewForm(props) {
             Build & Class research and testing
           </label>
         </div>
-        <p className={styles.label}>
+        <p>
+          Are you applying initially as a Standard member, or do you have
+          aspirations of leadership?
+        </p>
+        <div className={styles.checkboxContainer}>
+          <input
+            onChange={(e) => {
+              SetMembership('Standard Memembership');
+            }}
+            ame={styles.checkbox}
+            type="checkbox"
+            id="bounty"
+            name="interests"
+          />
+          <label ame={styles.p2} for="bounty">
+            Standard Membership
+          </label>
+        </div>
+        <div className={styles.checkboxContainer}>
+          <input
+            onChange={(e) => {
+              SetMembership('Leadership Position');
+            }}
+            ame={styles.checkbox}
+            type="checkbox"
+            id="bounty"
+            name="interests"
+          />
+          <label ame={styles.p2} for="bounty">
+            Leadership Position
+          </label>
+        </div>
+        <p>
+          If interested in a leadership role, which are you most interested in?
+        </p>
+        <select
+          onChange={(e) => {
+            SetRole(e.target.value);
+          }}
+          className={styles.input}
+          id="access"
+          name="access"
+        >
+          <option
+            className={styles.option}
+            value="Just Standard Membership Only"
+          >
+            Just Standard Membership
+          </option>
+          <option className={styles.option} value="Community Manager">
+            Community Manager
+          </option>
+          <option className={styles.option} value="Moderator">
+            Moderator
+          </option>
+          <option className={styles.option} value="Siege Captain">
+            Siege Captain
+          </option>
+
+          <option className={styles.option} value="Bounty Hunter Captain">
+            Bounty Hunter Captain
+          </option>
+          <option className={styles.option} value="Dungeon Master">
+            Dungeon Master
+          </option>
+          <option className={styles.option} value="Raid Leader">
+            Raid Leader
+          </option>
+          <option className={styles.option} value="Guild Artisan">
+            Guild Artisan
+          </option>
+          <option className={styles.option} value="Class Researcher / Leader">
+            Class Researcher / Leader
+          </option>
+        </select>
+        <p>
+          Please tell us about yourself, your personality and why you would be a
+          good fit for the role? (Not required for Standard Membership)
+        </p>
+        <textarea
+          onChange={(e) => SetPersonality(e.target.value)}
+          value={personality}
+          className={styles.input2}
+          placeholder="enter text here"
+          type="text"
+          id="craft"
+          name="craft"
+          cols="100"
+          rows="100"
+        />
+        <label className={styles.label}>
           If you master a craft, which branch would you specialize in? If you
           can elongate on your choice or passion, please do - We'd love to hear
           all about it. No, seriously - the wait for this game is an illness...
-        </p>
-        <label ame={styles.p2} for="craft"></label>
+        </label>
         <textarea
           onChange={(e) => SetCrafting(e.target.value)}
           value={crafting}
@@ -302,6 +407,7 @@ function NewForm(props) {
           cols="100"
           rows="100"
         />
+        <button onClick={(e) => handleSubmit(e)}>Submit</button>
       </form>
     </div>
   );
