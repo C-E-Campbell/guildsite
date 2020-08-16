@@ -7,7 +7,7 @@ const nodemailer = require('nodemailer');
 
 app.use(express.json());
 app.use(morgan('tiny'));
-
+app.use(express.static(`${__dirname}/../build`));
 app.post('/api/v1/guildapp', async function (req, res) {
   const {
     discordID,
@@ -70,5 +70,8 @@ app.post('/api/v1/guildapp', async function (req, res) {
   });
   res.json(discordID);
 });
-
+const path = require('path');
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../build/index.html'));
+});
 app.listen(8293, () => console.log('Server Running'));
