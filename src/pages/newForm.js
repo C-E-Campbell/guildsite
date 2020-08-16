@@ -268,14 +268,17 @@ function NewForm(props) {
             id="research"
             name="interests"
           />
-          <label ame={styles.p2} for="research">
+
+          <label className={styles.p2} for="research">
             Build & Class research and testing
           </label>
         </div>
-        <p>
+        <br></br>
+        <label className={styles.label}>
           Are you applying initially as a Standard member, or do you have
           aspirations of leadership?
-        </p>
+        </label>
+        <br></br>
         <div className={styles.checkboxContainer}>
           <input
             onChange={(e) => {
@@ -304,9 +307,10 @@ function NewForm(props) {
             Leadership Position
           </label>
         </div>
-        <p>
+        <br></br>
+        <label className={styles.label}>
           If interested in a leadership role, which are you most interested in?
-        </p>
+        </label>
         <select
           onChange={(e) => {
             SetRole(e.target.value);
@@ -347,10 +351,10 @@ function NewForm(props) {
             Class Researcher / Leader
           </option>
         </select>
-        <p>
+        <label className={styles.label}>
           Please tell us about yourself, your personality and why you would be a
           good fit for the role? (Not required for Standard Membership)
-        </p>
+        </label>
         <textarea
           onChange={(e) => SetPersonality(e.target.value)}
           value={personality}
@@ -407,7 +411,9 @@ function NewForm(props) {
           cols="100"
           rows="100"
         />
-        <button onClick={(e) => handleSubmit(e)}>Submit</button>
+        <button className={styles.formBtn} onClick={(e) => handleSubmit(e)}>
+          Submit
+        </button>
       </form>
     </div>
   );
