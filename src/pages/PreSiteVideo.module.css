@@ -116,3 +116,41 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 600px) {
+  .logo {
+    height: 50%;
+    top: 20%;
+  }
+
+  .video_container {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.192),
+        rgba(221, 124, 13, 0.11)
+      ),
+      url('../assets/images/presite.jpg');
+    background-size: cover;
+  }
+
+  .video {
+    display: none;
+  }
+
+  .sound {
+    display: none;
+  }
+
+  .soundSpan {
+    display: none;
+  }
+
+  .button {
+    color: rgb(219, 153, 31);
+
+    border: 1px solid rgb(219, 153, 31);
+  }
+  .button:hover {
+    border: 1px solid rgb(199, 138, 25);
+    color: rgb(201, 139, 25);
+  }
+}
