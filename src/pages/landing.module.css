@@ -290,4 +290,8 @@
   .cardContainer {
     display: none;
   }
+
+  .redLogo {
+    display: none;
+  }
 }
