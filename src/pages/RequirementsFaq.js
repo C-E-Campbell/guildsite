@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import FaqQuestion from '../components/FaqQuestion';
 import styles from './Requirements.module.css';
 export default function RequirementsFaq(props) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className={styles.container}>
       <FaqQuestion

@@ -67,3 +67,10 @@
   cursor: pointer;
   background-color: rgb(184, 184, 184);
 }
+
+@media (max-width: 600px) {
+  .faqContainer {
+    max-width: 95%;
+    width: 100%;
+  }
+}

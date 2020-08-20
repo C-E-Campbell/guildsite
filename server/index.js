@@ -33,8 +33,7 @@ app.post('/api/v1/guildapp', async function (req, res) {
   });
   await transporter.sendMail({
     from: '"Guild App" <charles.e.campbell1989@gmail.com>', // sender address
-    to:
-      'magicofgaia@gmail.com, darktemplar260@gmail.com, charles.e.campbell1989@gmail.com, bnieman741@gmail.com, connor.v.finucan@gmail.com', // list of receivers
+    to: 'charles.e.campbell1989@gmail.com', // list of receivers
     subject: '⚔️ New Guild Application! ⚔️', // Subject line
 
     html: `

@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Question from '../components/FaqQuestion';
 import style from '../pages/FAQ.module.css';
 import Footer from '../components/Footer';
 export default function FAQ() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className={style.container}>
