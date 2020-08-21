@@ -18,49 +18,49 @@ function App() {
   return (
     <>
       <Switch>
-        <Route exact path="/">
+        <Route exact path='/'>
           <PreSite />
         </Route>
-        <Route exact path="/main">
+        <Route exact path='/main'>
           <Landing />
         </Route>
-        <Route exact path="/apply">
+        <Route exact path='/apply'>
           <Nav />
           <Apply />
         </Route>
-        <Route exact path="/faq">
+        <Route exact path='/faq'>
           <Nav />
           <FaqMain />
         </Route>
-        <Route exact path="/thanks">
+        <Route exact path='/thanks'>
           <Nav />
           <Thanks />
         </Route>
-        <Route exact path="/login">
+        <Route exact path='/login'>
           <Nav />
           <Login />
         </Route>
-        <Route exact path="/requirements">
+        <Route exact path='/requirements'>
           <Nav />
           <Requirements />
         </Route>
-        <Route exact path="/guild_ambition">
+        <Route exact path='/guild_ambition'>
           <Nav />
           <Guild_Ambition />
         </Route>
-        <Route exact path="/factions">
+        <Route exact path='/factions'>
           <Nav />
           <Factions />
         </Route>
-        <Route exact path="/raiding">
+        <Route exact path='/raiding'>
           <Nav />
           <Raids />
         </Route>
-        <Route exact path="/node_ambition">
+        <Route exact path='/node_ambition'>
           <Nav />
           <Node_Ambition />
         </Route>
-        <Route exact path="/plans">
+        <Route exact path='/plans'>
           <Nav />
           <Plans />
         </Route>
