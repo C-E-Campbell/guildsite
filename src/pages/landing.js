@@ -74,11 +74,13 @@ export default function landing() {
           </h3>
           <div className={style.cardContainer}>
             <Card
-              img={Caravan}
-              title='Caravan Sevices'
-              description='Our Bounty Hunters Guild will offer protection services for your caravan & cargo. We will also form contracts with 
-            Ally & Vassal-Nodes for both single-shipments and long term protection of a route.'
+              img={Bounty}
+              title='Guild Bounty Hunters'
+              description="Our aptly named 'Band of the Falcon', this is the mercenary wing of our guild. These individual hunters have a very particular set of skills; 
+            skills they have acquired over a very long career that will be integral to our success in the grander scale. They will be in charge of asset protection, anti-griefing, group disruption, siege strategies & more. 
+            These talented players will earn a cut from guild contracts."
             />
+
             <Card
               img={Guild}
               title='Guild Leadership'
@@ -92,20 +94,20 @@ export default function landing() {
             Each raiding group will have multiple leaders: the raid leader, dungeon masters & class leaders working together to ensure victory.'
             />
           </div>
-          <div className={style.cardContainer}>
+          <div className={(style.cardContainer, style.hideOnMobile)}>
+            <Card
+              img={Caravan}
+              title='Caravan Sevices'
+              description='Our Bounty Hunters Guild will offer protection services for your caravan & cargo. We will also form contracts with 
+            Ally & Vassal-Nodes for both single-shipments and long term protection of a route.'
+            />
             <Card
               img={Council}
               title='Guild Councils'
               description='The guild will be run by several different councils, these groups of individuals will work in different parts of our guild ensuring each area is functioning smoothly. 
             All areas will be covered from interpersonal needs, to guild artisans projects, siege attack and defense, raiding, PvP and freehold activites.'
             />
-            <Card
-              img={Bounty}
-              title='Guild Bounty Hunters'
-              description="Our aptly named 'Band of the Falcon', this is the mercenary wing of our guild. These individual hunters have a very particular set of skills; 
-            skills they have acquired over a very long career that will be integral to our success in the grander scale. They will be in charge of asset protection, anti-griefing, group disruption, siege strategies & more. 
-            These talented players will earn a cut from guild contracts."
-            />
+
             <Card
               img={Artisans}
               title='Guild Artisans'

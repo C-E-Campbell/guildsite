@@ -210,6 +210,7 @@
 
 .cardContainer {
   width: 70%;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
@@ -257,6 +258,9 @@
 }
 
 @media (max-width: 600px) {
+  .hideOnMobile {
+    display: none;
+  }
   .container {
     background-position: bottom;
   }
@@ -285,10 +289,13 @@
   }
 
   .article {
-    display: none;
+    flex-direction: column;
+    padding: 1rem;
   }
+
   .cardContainer {
-    display: none;
+    flex-direction: column;
+    width: 100%;
   }
 
   .redLogo {

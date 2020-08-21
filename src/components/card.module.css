@@ -38,3 +38,19 @@
   border-radius: 5px;
   margin: 0.5rem auto;
 }
+
+@media (max-width: 600px) {
+  .paragraph {
+    font-size: 0.7rem;
+  }
+
+  .card {
+    margin: 10px 0;
+    height: 100%;
+  }
+
+  .img {
+    height: 90px;
+    margin: 0 auto;
+  }
+}
