@@ -42,11 +42,31 @@
   font-family: 'Cinzel Decorative', cursive;
   color: #ccc;
 }
-
-.logo {
-  height: 50%;
-  opacity: 0.4;
+.iconBox {
+  width: 50%;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.logo {
+  height: 20%;
+  opacity: 0.4;
+  margin: 1rem auto;
+}
+i {
+  color: rgb(75, 15, 15);
+}
+
+i:hover {
+  color: rgb(97, 23, 23);
+  cursor: pointer;
+}
+
+h5 {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: #ccc;
+  font-family: 'Cinzel Decorative', cursive;
 }
 
 @media (max-width: 600px) {
@@ -75,5 +95,14 @@
   .textBox {
     text-align: center;
     width: 100%;
+  }
+
+  i {
+    margin-bottom: 1rem;
+    color: rgb(145, 31, 31);
+  }
+
+  .iconBox {
+    width: 90%;
   }
 }

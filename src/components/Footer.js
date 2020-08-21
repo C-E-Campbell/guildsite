@@ -8,7 +8,30 @@ export default function Footer() {
         <div className={styles.textBox}>
           <h3 className={styles.h3}>Apostles of the Abyss</h3>
           <h4 className={styles.h4}>An Ashes of Creation Guild</h4>
-          <img className={styles.logo} src={logo} />
+          <h5>Find Us Here</h5>
+          <div className={styles.iconBox}>
+            <a
+              rel='noopener noreferrer'
+              href='https://twitter.com/AbyssApostles'
+              target='_blank'
+            >
+              <i className='fab fa-twitter fa-2x '></i>
+            </a>
+            <a
+              rel='noopener noreferrer'
+              target='_blank'
+              href='https://www.twitch.tv/apostlesoftheabyss'
+            >
+              <i className='fab fa-twitch fa-2x'></i>
+            </a>
+            <a
+              rel='noopener noreferrer'
+              target='_blank'
+              href='https://discord.com/channels/735220428397609023/735220428645204097'
+            >
+              <i class='fab fa-discord fa-2x'></i>
+            </a>
+          </div>
         </div>
         <div className={styles.box}>
           <iframe
