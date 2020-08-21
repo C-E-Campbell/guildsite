@@ -84,7 +84,7 @@ export default function landing() {
             <Card
               img={Guild}
               title='Guild Leadership'
-              description='Our leaders have been intricately involved in shaping & leading guilds to greatness since 2003. From FFXI, FFIV, Aion, Rift, GW2 & more. 
+              description='Our leaders have been intricately involved in shaping & leading guilds to greatness since 2003. From FFXI, FFXIV, Aion, Rift, GW2 & more. 
             We strive to create a fun and welcoming place while also maintaining an orderly community that can achieve any level of content.'
             />
             <Card
