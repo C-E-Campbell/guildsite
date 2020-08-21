@@ -94,7 +94,7 @@ export default function landing() {
             Each raiding group will have multiple leaders: the raid leader, dungeon masters & class leaders working together to ensure victory.'
             />
           </div>
-          <div className={(style.cardContainer, style.hideOnMobile)}>
+          <div className={style.cardContainer}>
             <Card
               img={Caravan}
               title='Caravan Sevices'
