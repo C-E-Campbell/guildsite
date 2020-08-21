@@ -23,7 +23,7 @@
 }
 
 .box,
-.textbox {
+.textBox {
   background-color: rgba(17, 4, 4, 0);
   width: 45%;
   text-align: center;
@@ -46,6 +46,7 @@
 .logo {
   height: 50%;
   opacity: 0.4;
+  margin: 0 auto;
 }
 
 @media (max-width: 600px) {
@@ -73,5 +74,6 @@
   }
   .textBox {
     text-align: center;
+    width: 100%;
   }
 }
