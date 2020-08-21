@@ -112,4 +112,8 @@
   .input2 {
     height: 200px;
   }
+
+  .container {
+    background-color: #222;
+  }
 }

@@ -42,4 +42,10 @@
     justify-content: space-around;
     background-color: transparent;
   }
+
+  .container {
+    background-image: linear-gradient(#000, rgba(20, 17, 20, 0.568)),
+      url('../assets/images/phonefog.jpg');
+    background-size: cover;
+  }
 }
