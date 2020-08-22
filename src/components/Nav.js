@@ -39,10 +39,10 @@ export default function Nav() {
           FAQ
         </NavLink>
         {/* <NavLink
-          className={style.navlink}
+          className={(style.navlink, style.hideOnMobile)}
           activeClassName={style.selected}
           exact
-          to="/Streams"
+          to='/Streams'
         >
           STREAM
         </NavLink> */}
@@ -54,14 +54,14 @@ export default function Nav() {
         >
           DISCORD
         </a>
-        {/* <NavLink
+        <NavLink
           className={style.navlink}
           activeClassName={style.selected}
           exact
           to='/login'
         >
           LOGIN/REGISTER
-        </NavLink> */}
+        </NavLink>
       </div>
     </div>
   );

@@ -58,4 +58,8 @@
   .nav_container {
     max-width: 100%;
   }
+
+  .hideOnMobile {
+    display: none;
+  }
 }

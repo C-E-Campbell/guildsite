@@ -70,7 +70,7 @@ function Login(props) {
               onChange={(e) => SetUser(e.target.value)}
               required
               className={styles.input}
-              placeholder='enter guild name'
+              placeholder='enter username'
               type='text'
             />
             <label className={styles.label}>Password</label>
