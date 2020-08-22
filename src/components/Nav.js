@@ -10,7 +10,7 @@ export default function Nav() {
           activeClassName={style.selected}
           className={style.navlink}
           exact
-          to="/main"
+          to='/main'
         >
           HOME
         </NavLink>
@@ -26,7 +26,7 @@ export default function Nav() {
           className={style.navlink}
           activeClassName={style.selected}
           exact
-          to="/apply"
+          to='/apply'
         >
           APPLY
         </NavLink>
@@ -34,7 +34,7 @@ export default function Nav() {
           className={style.navlink}
           activeClassName={style.selected}
           exact
-          to="/faq"
+          to='/faq'
         >
           FAQ
         </NavLink>
@@ -47,10 +47,10 @@ export default function Nav() {
           STREAM
         </NavLink> */}
         <a
-          href="https://discord.com/channels/735220428397609023/735220428645204097"
-          target="_blank"
+          href='https://discord.com/channels/735220428397609023/735220428645204097'
+          target='_blank'
           className={style.navlink}
-          rel="noopener noreferrer"
+          rel='noopener noreferrer'
         >
           DISCORD
         </a>
@@ -58,7 +58,7 @@ export default function Nav() {
           className={style.navlink}
           activeClassName={style.selected}
           exact
-          to="/login"
+          to='/login'
         >
           LOGIN/REGISTER
         </NavLink> */}

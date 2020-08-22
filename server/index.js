@@ -8,6 +8,10 @@ const nodemailer = require('nodemailer');
 app.use(express.json());
 app.use(morgan('tiny'));
 app.use(express.static(`${__dirname}/../build`));
+app.post('/api/v1/register', async function (req, res) {
+  const { code, email, user, password } = req.body;
+  res.json({ code, email, user });
+});
 app.post('/api/v1/guildapp', async function (req, res) {
   const {
     discordID,

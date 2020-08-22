@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import style from './landing.module.css';
-import logo from '../assets/images/redLogo.png';
+import logo from '../assets/images/redDragon.png';
 import Nav from '../components/Nav';
 import Card from '../components/card';
 import Caravan from '../assets/images/Caravan 1.png';
@@ -20,7 +20,6 @@ export default function landing() {
           <div className={style.landing_container}></div>
           <div className={style.textBox}>
             <img className={style.mainLogo} src={logo} />
-            <h1 className={style.logoP}>Apostles Of The Abyss</h1>
           </div>
 
           <div className={style.overlay}></div>
@@ -61,7 +60,6 @@ export default function landing() {
             relationships that go beyond the boundaries of clocking in and
             clocking out for raids, this might be the guild for you.
           </p>
-          <img src={logo} className={style.redLogo} />
         </div>
         <div className={style.article}>
           <h3
