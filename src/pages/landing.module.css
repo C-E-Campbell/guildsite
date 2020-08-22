@@ -262,6 +262,12 @@
     display: none;
   }
   .container {
+    height: 80vh;
+  }
+  .mainLogo {
+    height: 22vh;
+  }
+  .container {
     background-position: bottom;
   }
   .logoP {
