@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { withRouter } from 'react-router-dom';
 import style from './PreSiteVideo.module.css';
 import video from '../assets/video/newFire.mp4';
-import Logo from '../assets/images/noLetters.png';
+import Logo from '../assets/images/purpleDragon.png';
 import audio from '../assets/music/HeroesOfOId-Mix1.mp3';
 function PreSiteVideo(props) {
   const [playing, setPlaying] = useState(false);
