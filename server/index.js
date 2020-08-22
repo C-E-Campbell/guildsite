@@ -28,7 +28,6 @@ app.post('/api/v1/register', async function (req, res) {
   const { code, email, user, password } = req.body;
 
   const codee = Code.find({ main: true }).then((data) => {
-    console.log(data[0].code);
     if (Number(code) === data[0].code) {
       const saveMember = new Member({
         user,
@@ -36,6 +35,7 @@ app.post('/api/v1/register', async function (req, res) {
         password,
       });
       saveMember.save();
+      res.send('all good');
     } else {
       res.send('no good');
     }
