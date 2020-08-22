@@ -24,6 +24,17 @@ mongoose
     console.log('db Connected');
   });
 
+app.post('/api/v1/login', async function (req, res) {
+  const { user, password } = req.body;
+  const hasMember = Member.find({ user }).then((data) => {
+    if (data[0] && data[0].password === password) {
+      res.json({ success: true }).status(200);
+    } else {
+      res.json({ success: false }).status(500);
+    }
+  });
+});
+
 app.post('/api/v1/register', async function (req, res) {
   const { code, email, user, password } = req.body;
 

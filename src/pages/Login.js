@@ -10,6 +10,22 @@ function Login(props) {
   const [user, SetUser] = useState('');
   const [password, SetPassword] = useState('');
 
+  const Login = async (e) => {
+    e.preventDefault();
+    await axios
+      .post('/api/v1/login', {
+        user,
+        password,
+      })
+      .then((data) => {
+        if (data.data.success) {
+          props.history.push('/internal');
+        } else {
+          props.history.push('/login');
+        }
+      });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     axios.post('/api/v1/register', {
@@ -24,6 +40,7 @@ function Login(props) {
     SetPassword('');
     SetUser('');
   };
+
   if (register) {
     return (
       <div className={styles.container}>
@@ -90,14 +107,25 @@ function Login(props) {
         <div className={styles.innerContainer}>
           <form className={styles.form}>
             <label className={styles.label}>Username</label>
-            <input className={styles.input} placeholder='enter username' />
+            <input
+              value={user}
+              onChange={(e) => SetUser(e.target.value)}
+              required
+              className={styles.input}
+              placeholder='enter username'
+            />
             <label className={styles.label}>Password</label>
             <input
+              value={password}
+              onChange={(e) => SetPassword(e.target.value)}
+              required
               className={styles.input}
               type='password'
               placeholder='enter password'
             />
-            <button className={styles.button}>Login</button>
+            <button onClick={(e) => Login(e)} className={styles.button}>
+              Login
+            </button>
           </form>
           <button
             className={styles.formSwitch}

@@ -13,6 +13,7 @@ import Factions from './pages/Factions';
 import Plans from './pages/Plans';
 import Raids from './pages/Raiding';
 import Node_Ambition from './pages/NodeAmbition';
+import Internal from './pages/Internal';
 
 function App() {
   return (
@@ -63,6 +64,9 @@ function App() {
         <Route exact path='/plans'>
           <Nav />
           <Plans />
+        </Route>
+        <Route exact path='/internal'>
+          <Internal />
         </Route>
       </Switch>
     </>

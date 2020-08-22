@@ -54,14 +54,14 @@ export default function Nav() {
         >
           DISCORD
         </a>
-        <NavLink
+        {/* <NavLink
           className={style.navlink}
           activeClassName={style.selected}
           exact
           to='/login'
         >
           LOGIN/REGISTER
-        </NavLink>
+        </NavLink> */}
       </div>
     </div>
   );
