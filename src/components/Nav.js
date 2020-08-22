@@ -55,7 +55,7 @@ export default function Nav() {
           DISCORD
         </a>
         <NavLink
-          className={style.navlink}
+          className={(style.navlink, style.hideOnMobile)}
           activeClassName={style.selected}
           exact
           to='/login'
