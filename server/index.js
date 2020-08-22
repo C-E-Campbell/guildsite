@@ -22,8 +22,7 @@ mongoose
   )
   .then(() => {
     console.log('db Connected');
-  })
-  .error(() => console.log(error));
+  });
 
 app.post('/api/v1/register', async function (req, res) {
   const { code, email, user, password } = req.body;
