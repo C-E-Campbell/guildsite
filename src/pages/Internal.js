@@ -19,8 +19,10 @@ function Internal(props) {
         <img className={style.default} src={Default} />
 
         <h3>Name</h3>
+        <h3>Rank</h3>
         <h3>Race</h3>
         <h3>Class</h3>
+        <h3>Role</h3>
         <button
           onClick={(e) => {
             e.preventDefault();
