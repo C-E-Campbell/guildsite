@@ -13,7 +13,7 @@ function Login(props) {
   const Login = async (e) => {
     e.preventDefault();
     await axios
-      .post('/api/v1/login', {
+      .post('/api/v1/auth/login', {
         user,
         password,
       })
@@ -28,7 +28,7 @@ function Login(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('/api/v1/register', {
+    axios.post('/api/v1/auth/register', {
       code,
       email,
       user,

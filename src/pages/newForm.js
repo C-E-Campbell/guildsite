@@ -22,7 +22,7 @@ function NewForm(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('/api/v1/guildapp', {
+    axios.post('/api/v1/auth/guildapp', {
       discordID,
       access,
       mic,
