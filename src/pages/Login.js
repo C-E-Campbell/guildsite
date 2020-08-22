@@ -10,13 +10,19 @@ function Login(props) {
   const [user, SetUser] = useState('');
   const [password, SetPassword] = useState('');
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     axios.post('/api/v1/register', {
       code,
       email,
       user,
       password,
     });
+
+    SetCode('');
+    SetEmail('');
+    SetPassword('');
+    SetUser('');
   };
   if (register) {
     return (
