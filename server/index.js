@@ -1,16 +1,45 @@
 require('dotenv').config({ path: '../.env' });
-
+const mongoose = require('mongoose');
 const express = require('express');
 const morgan = require('morgan');
 const app = express();
 const nodemailer = require('nodemailer');
-
+const Character = require('./models/character');
+const Member = require('./models/newMember');
+const Code = require('./models/code');
 app.use(express.json());
 app.use(morgan('tiny'));
 app.use(express.static(`${__dirname}/../build`));
+mongoose
+  .connect(
+    'mongodb+srv://ccamp290:rufus0606@cluster0.2rxxc.azure.mongodb.net/<guild>?retryWrites=true&w=majority',
+    {
+      useNewUrlParser: true,
+      useCreateIndex: true,
+      useFindAndModify: false,
+      useUnifiedTopology: true,
+    }
+  )
+  .then(() => {
+    console.log('db Connected');
+  });
+
 app.post('/api/v1/register', async function (req, res) {
   const { code, email, user, password } = req.body;
-  res.json({ code, email, user });
+
+  const codee = Code.find({ main: true }).then((data) => {
+    console.log(data[0].code);
+    if (Number(code) === data[0].code) {
+      const saveMember = new Member({
+        user,
+        email,
+        password,
+      });
+      saveMember.save();
+    } else {
+      res.send('no good');
+    }
+  });
 });
 app.post('/api/v1/guildapp', async function (req, res) {
   const {
