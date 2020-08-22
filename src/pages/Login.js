@@ -28,7 +28,7 @@ function Login(props) {
     return (
       <div className={styles.container}>
         <div className={styles.innerContainer}>
-          <form onSubmit={() => handleSubmit()} className={styles.form}>
+          <form className={styles.form}>
             <label className={styles.label}>Guild Invite Code</label>
             <input
               value={code}
@@ -65,7 +65,11 @@ function Login(props) {
               type='password'
               placeholder='enter password'
             />
-            <button type='submit' className={styles.button}>
+            <button
+              onClick={(e) => handleSubmit(e)}
+              type='submit'
+              className={styles.button}
+            >
               Register
             </button>
           </form>
