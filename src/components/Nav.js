@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import style from './navigation.module.css';
+import cx from 'classnames';
 
 export default function Nav() {
   return (
@@ -55,7 +56,7 @@ export default function Nav() {
           DISCORD
         </a>
         <NavLink
-          className={(style.navlink, style.hideOnMobile)}
+          className={cx(style.hideOnMobile, style.navlink)}
           activeClassName={style.selected}
           exact
           to='/login'
