@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
 import axios from 'axios';
-import styles from './NewForm.module.css';
+import styles from '../styles/NewForm.module.css';
 function NewForm(props) {
   const [discordID, SetDiscordID] = useState('');
   const [access, SetAccess] = useState('');
@@ -9,7 +9,7 @@ function NewForm(props) {
   const [interests, SetInterests] = useState([]);
   const [crafting, SetCrafting] = useState('');
   const [membership, SetMembership] = useState('');
-  const [role, SetRole] = useState('');
+  const [role, SetRole] = useState('No Role Selected');
   const [personality, SetPersonality] = useState('');
   const [exp, SetExp] = useState('');
   const [questions, SetQuestions] = useState('');

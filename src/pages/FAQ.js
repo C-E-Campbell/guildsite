@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Question from '../components/FaqQuestion';
-import style from '../pages/FAQ.module.css';
+import style from '../styles/FAQ.module.css';
 import Footer from '../components/Footer';
 export default function FAQ() {
   useEffect(() => {

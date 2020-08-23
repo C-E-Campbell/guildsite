@@ -5,6 +5,7 @@ const CharacterSchema = mongoose.Schema({
   race: String,
   class: String,
   weapon: String,
+  photo: String,
 });
 
 const Character = mongoose.model('Character', CharacterSchema);

@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Landing from './pages/landing';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import Nav from './components/Nav';
 import Apply from './pages/newForm';
 import PreSite from './pages/PreSiteVideo';
@@ -16,6 +16,15 @@ import Node_Ambition from './pages/NodeAmbition';
 import Internal from './pages/Internal';
 
 function App() {
+  const [isLogged, SetIsLogged] = useState(false);
+
+  const checkLogged = () => {
+    SetIsLogged(true);
+  };
+
+  const signOut = () => {
+    SetIsLogged(false);
+  };
   return (
     <>
       <Switch>
@@ -39,7 +48,7 @@ function App() {
         </Route>
         <Route exact path='/login'>
           <Nav />
-          <Login />
+          <Login login={checkLogged} />
         </Route>
         <Route exact path='/requirements'>
           <Nav />
@@ -66,7 +75,7 @@ function App() {
           <Plans />
         </Route>
         <Route exact path='/internal'>
-          <Internal />
+          {isLogged ? <Internal signout={signOut} /> : <Redirect to='/main' />}
         </Route>
       </Switch>
     </>

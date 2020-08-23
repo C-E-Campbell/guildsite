@@ -1,9 +1,8 @@
 var express = require('express');
 var router = express.Router();
-const { register, login, guildApp } = require('../controllers/authCtrl');
+const { register, login } = require('../controllers/authCtrl');
 
-router.post('/login', login);
-router.post('/register', register);
-router.post('/guildapp', guildApp);
+router.route('/login').post(login);
+router.route('/register').post(register);
 
 module.exports = router;

@@ -26,7 +26,7 @@ function Internal(props) {
         <button
           onClick={(e) => {
             e.preventDefault();
-            props.history.push('/main');
+            props.signout();
           }}
           className={style.signOut}
         >

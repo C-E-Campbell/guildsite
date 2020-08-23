@@ -18,7 +18,9 @@ function Login(props) {
         password,
       })
       .then((data) => {
-        if (data.data.success) {
+        console.log(data);
+        if (data.data.token) {
+          props.login();
           props.history.push('/internal');
         } else {
           props.history.push('/login');

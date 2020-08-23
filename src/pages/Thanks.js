@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import styles from './Thanks.module.css';
+import styles from '../styles/Thanks.module.css';
 export default function Thanks() {
   useEffect(() => {
     window.scrollTo(0, 0);
