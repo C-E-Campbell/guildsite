@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
-const Member = require('./models/newMember');
-const Code = require('./models/code');
+const Member = require('../models/newMember');
+const Code = require('../models/code');
 
 module.exports = {
   register: async function (req, res) {
