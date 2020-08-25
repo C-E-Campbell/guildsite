@@ -60,4 +60,11 @@ module.exports = {
       }
     });
   },
+  protect: async function (req, res, next) {
+    //get and check is token is there
+    //check if it is valid
+    //check if user still exists
+    //check if user changed password after jwt was issued
+    next();
+  },
 };

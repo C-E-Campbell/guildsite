@@ -22,20 +22,22 @@ function NewForm(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('/api/v1/auth/guildapp', {
-      discordID,
-      access,
-      mic,
-      interests,
-      crafting,
-      membership,
-      personality,
-      role,
-      exp,
-      questions,
-    });
+    if (discord && access && mic && exp) {
+      axios.post('/api/v1/auth/guildapp', {
+        discordID,
+        access,
+        mic,
+        interests,
+        crafting,
+        membership,
+        personality,
+        role,
+        exp,
+        questions,
+      });
 
-    props.history.push('/thanks');
+      props.history.push('/thanks');
+    }
   };
 
   return (
