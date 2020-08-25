@@ -1,4 +1,4 @@
-require('dotenv').config({ path: '../.env' });
+require('dotenv').config({ path: './.env' });
 const { connection, port } = process.env;
 const mongoose = require('mongoose');
 const authRouter = require('./routes/authRouter');
