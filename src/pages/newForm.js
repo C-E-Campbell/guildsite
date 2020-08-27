@@ -23,7 +23,7 @@ function NewForm(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (discordID && access && mic && exp) {
-      axios.post('/app/v1/apply', {
+      axios.post('/api/v1/apply', {
         discordID,
         access,
         mic,
