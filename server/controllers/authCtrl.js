@@ -1,6 +1,8 @@
 const Member = require('../models/Member');
 const Code = require('../models/InviteCode');
 const jwt = require('jsonwebtoken');
+const nodemailer = require('nodemailer');
+
 const { jwtSecret, JWTExpire } = process.env;
 module.exports = {
   guildApp: async function (req, res) {
