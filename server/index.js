@@ -11,9 +11,8 @@ const app = express();
 app.use(express.json());
 app.use(morgan('tiny'));
 app.use(express.static(`${__dirname}/../build`));
-
-app.use('/api/v1/auth', authRouter);
 app.use('/apply', guildApp);
+app.use('/api/v1/auth', authRouter);
 
 mongoose
   .connect(connection, {
