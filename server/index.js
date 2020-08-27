@@ -13,7 +13,7 @@ app.use(morgan('tiny'));
 app.use(express.static(`${__dirname}/../build`));
 
 app.use('/api/v1/auth', authRouter);
-app.use('/api/v1/apply', guildApp);
+app.use('/apply', guildApp);
 
 mongoose
   .connect(connection, {
