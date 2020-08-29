@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.json());
 app.use(morgan('tiny'));
-//app.use(express.static(`${__dirname}/../build`));
+app.use(express.static(`${__dirname}/../build`));
 
 app.use('/api/v1/auth', authRouter);
 
@@ -25,8 +25,8 @@ mongoose
     console.log('db Connected');
   });
 
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, '../build/index.html'));
-// });
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../build/index.html'));
+});
 
 app.listen(port, () => console.log('Server Running'));
