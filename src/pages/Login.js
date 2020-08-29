@@ -9,6 +9,7 @@ function Login(props) {
   const [email, SetEmail] = useState('');
   const [user, SetUser] = useState('');
   const [password, SetPassword] = useState('');
+  const [passwordConfirm, SetPasswordConfirm] = useState('');
 
   const Login = async (e) => {
     e.preventDefault();
@@ -35,12 +36,14 @@ function Login(props) {
       email,
       user,
       password,
+      passwordConfirm,
     });
 
     SetCode('');
     SetEmail('');
     SetPassword('');
     SetUser('');
+    SetPasswordConfirm('');
   };
 
   if (register) {
@@ -83,6 +86,15 @@ function Login(props) {
               className={styles.input}
               type='password'
               placeholder='enter password'
+            />
+            <label className={styles.label}>Password Confirm</label>
+            <input
+              value={passwordConfirm}
+              onChange={(e) => SetPasswordConfirm(e.target.value)}
+              required
+              className={styles.input}
+              type='password'
+              placeholder='re-enter password'
             />
             <button
               onClick={(e) => handleSubmit(e)}
