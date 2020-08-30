@@ -9,7 +9,11 @@ import Teams from './Teams';
 import Profile from './Profile';
 function Internal(props) {
   const [showComp, SetShowComp] = useState('Contracts');
+  const [charDetails, SetCharDetails] = useState({});
 
+  const updateChar = (char) => {
+    SetCharDetails(char);
+  };
   const pickComponent = (comp) => {
     SetShowComp(comp);
   };
@@ -19,10 +23,10 @@ function Internal(props) {
         <img className={style.default} src={Default} />
 
         <h3>Name</h3>
-        <h3>Rank</h3>
+
         <h3>Race</h3>
         <h3>Class</h3>
-        <h3>Role</h3>
+
         <button
           onClick={(e) => {
             e.preventDefault();
@@ -43,7 +47,7 @@ function Internal(props) {
           ) : showComp === 'Teams' ? (
             <Teams />
           ) : showComp === 'Profile' ? (
-            <Profile />
+            <Profile details={updateChar} />
           ) : (
             <Contracts />
           )}

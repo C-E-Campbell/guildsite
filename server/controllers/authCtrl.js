@@ -1,4 +1,5 @@
 const Member = require('../models/Member');
+const Character = require('../models/Character');
 const Code = require('../models/InviteCode');
 const jwt = require('jsonwebtoken');
 const nodemailer = require('nodemailer');
@@ -130,5 +131,21 @@ module.exports = {
     //check if user still exists
     //check if user changed password after jwt was issued
     next();
+  },
+  demographic: async function (req, res) {
+    const { name, race, mainClass, mainWeapon, artisan } = req.body;
+    await Character.create({
+      name,
+      race,
+      class: mainClass,
+      weapon: mainWeapon,
+      artisan,
+    });
+    res.status(200).json({ name, race, mainClass, mainWeapon, artisan });
+  },
+  classData: async function (req, res) {
+    await Character.find().then((data) => {
+      return res.status(200).send(data);
+    });
   },
 };

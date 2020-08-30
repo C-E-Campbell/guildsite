@@ -2,7 +2,7 @@ require('dotenv').config({ path: './.env' });
 const { connection, port } = process.env;
 const mongoose = require('mongoose');
 const authRouter = require('./routes/authRouter');
-const { guildApp } = require('./controllers/applyCTRL');
+
 const path = require('path');
 const express = require('express');
 const morgan = require('morgan');

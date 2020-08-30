@@ -21,6 +21,7 @@ function Login(props) {
       .then((data) => {
         console.log(data);
         if (data.data.token) {
+          props.email(data.data.data.user.email);
           props.login();
           props.history.push('/internal');
         } else {
@@ -31,13 +32,23 @@ function Login(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('/api/v1/auth/register', {
-      code,
-      email,
-      user,
-      password,
-      passwordConfirm,
-    });
+    axios
+      .post('/api/v1/auth/register', {
+        code,
+        email,
+        user,
+        password,
+        passwordConfirm,
+      })
+      .then((data) => {
+        if (data.data.token) {
+          props.email(data.data.data.user.email);
+          props.login();
+          props.history.push('/internal');
+        } else {
+          props.history.push('/login');
+        }
+      });
 
     SetCode('');
     SetEmail('');

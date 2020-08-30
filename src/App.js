@@ -17,9 +17,14 @@ import Internal from './pages/Internal';
 
 function App() {
   const [isLogged, SetIsLogged] = useState(false);
+  const [email, SetEmail] = useState('');
 
   const checkLogged = () => {
     SetIsLogged(true);
+  };
+
+  const setUserEmail = (email) => {
+    SetEmail(email);
   };
 
   const signOut = () => {
@@ -48,7 +53,7 @@ function App() {
         </Route>
         <Route exact path='/login'>
           <Nav />
-          <Login login={checkLogged} />
+          <Login email={setUserEmail} login={checkLogged} />
         </Route>
         <Route exact path='/requirements'>
           <Nav />
@@ -75,7 +80,11 @@ function App() {
           <Plans />
         </Route>
         <Route exact path='/internal'>
-          {isLogged ? <Internal signout={signOut} /> : <Redirect to='/main' />}
+          {isLogged ? (
+            <Internal email={email} signout={signOut} />
+          ) : (
+            <Redirect to='/main' />
+          )}
         </Route>
       </Switch>
     </>
