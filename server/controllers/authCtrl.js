@@ -3,7 +3,7 @@ const Member = require('../models/Member');
 const Code = require('../models/InviteCode');
 const jwt = require('jsonwebtoken');
 const nodemailer = require('nodemailer');
-const Character = require('../models/Character');
+const Character = require('./Character');
 
 const { jwtSecret, JWTExpire } = process.env;
 module.exports = {
@@ -135,7 +135,7 @@ module.exports = {
   },
   demographic: async function (req, res) {
     const { name, race, mainClass, mainWeapon, artisan } = req.body;
-    await Character.create({
+    Character.create({
       name,
       race,
       class: mainClass,
@@ -145,7 +145,7 @@ module.exports = {
     res.status(200).json({ name, race, mainClass, mainWeapon, artisan });
   },
   classData: async function (req, res) {
-    await Character.find().then((data) => {
+    Character.find().then((data) => {
       return res.status(200).send(data);
     });
   },
