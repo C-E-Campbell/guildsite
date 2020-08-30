@@ -1,8 +1,9 @@
 const Member = require('../models/Member');
-const Character = require('../models/Character');
+
 const Code = require('../models/InviteCode');
 const jwt = require('jsonwebtoken');
 const nodemailer = require('nodemailer');
+const Character = require('../models/Character');
 
 const { jwtSecret, JWTExpire } = process.env;
 module.exports = {
