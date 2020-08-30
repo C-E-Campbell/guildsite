@@ -5,7 +5,6 @@ const CharacterSchema = mongoose.Schema({
   race: String,
   class: String,
   weapon: String,
-
   artisan: String,
 });
 
