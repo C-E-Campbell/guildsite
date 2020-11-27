@@ -14,19 +14,19 @@ app.use(express.static(`${__dirname}/../build`));
 
 app.use('/api/v1/auth', authRouter);
 
-mongoose
-  .connect(connection, {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    console.log('db Connected');
-  });
+// mongoose
+//   .connect(connection, {
+//     useNewUrlParser: true,
+//     useCreateIndex: true,
+//     useFindAndModify: false,
+//     useUnifiedTopology: true,
+//   })
+//   .then(() => {
+//     console.log('db Connected');
+//   });
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../build/index.html'));
 });
 
-app.listen(port, () => console.log('Server Running'));
+app.listen(8293, () => console.log('Server Running'));
