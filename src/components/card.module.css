@@ -1,5 +1,5 @@
 .card {
-  max-width: 350px;
+  max-width: 300px;
   height: 500px;
   margin: 3rem 0;
   padding: 10px;
@@ -17,15 +17,15 @@
 .title {
   font-family: 'Cinzel Decorative', cursive;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin: 0.7rem;
   letter-spacing: 2px;
   color: rgb(204, 155, 22);
 }
 .paragraph {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   letter-spacing: 2px;
-  text-align: LEFT;
+  text-align: center;
   line-height: 1.5;
   color: #ccc;
   font-family: 'Source Sans Pro', sans-serif;
